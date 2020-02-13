@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,14 @@
   <title>OMG Universe</title>
   <link rel="stylesheet" href="css/style.css">
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
 </head>
+
 <body>
   <section class="header">
     <div class="container">
@@ -22,19 +27,19 @@
         <div class="header-navbar__navigation">
           <ul class="header-navbar__navigation__list">
             <li>
-              <a href="#">Начальная</a>
+              <a href="#about-us">О нас</a>
             </li>
             <li>
-              <a href="#">О нас</a>
+              <a href="#services">Список услуг</a>
             </li>
             <li>
-              <a href="#">Портфолио</a>
+              <a href="#contacts">Контакты</a>
             </li>
             <li>
-              <a href="#">Мастера</a>
+              <a id="button" href="#">Свяжитесь с нами</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a href="#map">Как нас найти?</a>
             </li>
           </ul>
         </div>
@@ -44,7 +49,8 @@
     <div class="main">
       <div class="container">
         <h1 class="main-title">OMG Universe</h1>
-        <p class="main-subtitle">Перманентный макияж в Таллине</p>
+        <p class="main-subtitle">Начните свой путь к совершенству вместе с нами. OMG universe – студия перманентного
+          макияжа в Таллинне.</p>
         <button class="main-button">
           <a href="#">Подробнее</a>
         </button>
@@ -56,14 +62,24 @@
 
 
 
-  <section class="about">
+  <section id="about-us" class="about">
     <div class="about container">
       <div class="about-information">
         <h3 class="about-information__title">О Нас</h3>
-        <p class="about-information__subtitle">Меня зовут Оксана Мартыненко и я рада приветствовать Вас на нашем сайте.
-          Перманентный макияж поможет сделать черты лица более яркими, выразительными и вам не придется каждый день
-          тратить много времени на сборы.
-          В нашей студии Вы можете быть спокойны и уверены, что находитесь в руках высоко квалифицированных мастеров.
+        <p class="about-information__subtitle">Перманентный макияж – это, в первую очередь, искусство. Искусство быть
+          красивой!
+          Красота в наше время – это естественность и гармоничность образов, сохранение природных форм с бесконечным
+          стремлением
+          к
+          совершенству.
+        </p>
+        <p class="about-information__subtitle">Сегодня совершенство доступно!
+        </p>
+        <p class="about-information__subtitle">С помощью перманентного макияжа вы легко сможете подчеркнуть вашу
+          индивидуальность, создать ваш неповторимый образ, а
+          главное вы будете чувствовать себя уверенно в любой ситуации, всегда и везде.
+        </p>
+        <p class="about-information__subtitle">И поверьте, красота не требует жертв, красота нуждается в уникальности!
         </p>
       </div>
       <!-- INFORMATION -->
@@ -75,11 +91,11 @@
   <!-- ABOUT -->
 
 
-  <section class="services">
+  <section id="services" class="services">
     <div class="services container">
       <div class="services-text">
-          <h1 class="services-text__title">Список услуг</h1>
-          <span class="services-text__subtitle">Какое-то описание списка услуг и информация о их предоставлении.</span>
+        <h1 class="services-text__title">Список услуг</h1>
+        <span class="services-text__subtitle">Какое-то описание списка услуг и информация о их предоставлении.</span>
       </div>
       <!-- SERVICES-TEXT -->
       <div class="services-information">
@@ -225,11 +241,12 @@
   </section>
   <!-- PRICELIST -->
 
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="container contacts">
       <div class="contacts-text">
         <h1 class="contacts-text__title">Контакты</h1>
-        <span class="contacts-text__subtitle">Вы можете с нами связаться любым удобным для вас способом или оставить заявку на обратную связь.</span>
+        <span class="contacts-text__subtitle">Вы можете с нами связаться любым удобным для вас способом или оставить
+          заявку на обратную связь.</span>
       </div>
       <!-- CONTACTS-TEXT -->
       <div class="contacts-common">
@@ -270,7 +287,7 @@
   </section>
   <!-- contacts -->
 
-  <section class="map">
+  <section id="map" class="map">
     <div class="container map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.045818413444!2d24.767086941299308!3d59.4375962598176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935c20b08feb%3A0x5ccbc608d7cf07d2!2sNarva%20maantee%2022%2C%2010124%20Tallinn!5e0!3m2!1sen!2see!4v1571756357201!5m2!1sen!2see"
@@ -278,18 +295,42 @@
     </div>
   </section>
 
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-dialog">
+      <button id="closeButton" class="modal-dialog__close">&times;</button>
+      <div class="modal-info">
+        <div class="modal-title">
+          <h3 class="modal-dialog__title">Свяжитесь с нами</h3>
+        </div>
+        <div class="modal-form">
+          <input class="modal-input" type="text" placeholder="Ваше имя">
+          <input class="modal-input" type="email" placeholder="E-mail">
+          <input class="modal-input" type="number" placeholder="Телефон">
+        </div>
+        <div class="modal-confirm">
+          <a class="modal-button" href="#">Отправить</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/main.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
   <script src="js/slick.min.js"></script>
   <script>
-    $(document).ready(function() {
-    $('.slider').slick({
-      slidesToShow: 2,
-      slidesToScroll: 2
-    });
+    $(document).ready(function () {
+      $('.slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
     });
   </script>
 </body>
+
 </html>
