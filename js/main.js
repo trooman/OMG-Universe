@@ -9,3 +9,13 @@ button.addEventListener('click', function () {
 closeButton.addEventListener('click', function () {
   modal.classList.remove('modal-active');
 });
+
+
+// Hide/Show services information
+// let servicesTitle = document.querySelector('.services-title');
+
+// servicesTitle.onclick = function () {
+//   for (let i = 0; i < servicesTitle.length; i++) {
+//     alert('df')
+//   }
+// }
