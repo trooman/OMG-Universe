@@ -499,6 +499,7 @@ li {
   /* margin-bottom: 80px; */
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 .services-block:hover {
   box-shadow: none;
 }
@@ -687,6 +688,7 @@ li {
   color: #81868e;
   font-size: 16px;
 }
+
 */ .priceList {
   background-color: #f3f3f3;
   padding-top: 30px;
@@ -899,6 +901,7 @@ li {
   padding: 60px;
   /* box-shadow: 1px 1px 100px #f3f3f3, -1px -1px 100px #f3f3f3; */
 }
+
 .modal-dialog:hover {
   border-color: white;
   box-shadow: 1px 1px 100px #464242, -1px -1px 100px #f3f3f3;
@@ -972,3 +975,119 @@ li {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+@media (max-width: 1045px) {
+  .main-page {
+    text-align: center;
+  }
+
+  .header-navbar__navigation__list {
+    font-size: 15px;
+  }
+
+  .header-navbar__navigation__list li {
+    margin-left: 20px;
+  }
+
+  /* about */
+  .about {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 940px) {
+  .contacts-common {
+    flex-wrap: wrap;
+  }
+
+  .contacts-common__block {
+    margin-bottom: 30px;
+  }
+}
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    border: none;
+  }
+
+  .menu-button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-top: -7px;
+    transition: transform 0.2s;
+  }
+
+  .menu-button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-top: 7px;
+    transition: transform 0.2s;
+  }
+
+  .menu-button-active {
+    height: 0;
+  }
+
+  .menu-button-active:before {
+    transform: rotate(45deg);
+    margin-top: 0;
+  }
+
+  .menu-button-active:after {
+    transform: rotate(-45deg);
+    margin-top: 0;
+  }
+
+  .header-navbar__navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #85b2e4;
+    width: 250px;
+    padding-bottom: 40px;
+  }
+
+  .header-navbar__navigation__active {
+    display: flex;
+  }
+
+  .header-navbar__navigation__list {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 50px;
+  }
+
+  .header-navbar__navigation__list li {
+    margin-left: 0;
+    margin-bottom: 17px;
+  }
+}

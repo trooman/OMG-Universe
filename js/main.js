@@ -10,12 +10,11 @@ closeButton.addEventListener('click', function () {
   modal.classList.remove('modal-active');
 });
 
+// бургер меню
+let menuButton = document.querySelector('.menu-button');
+let menu = document.querySelector('.header-navbar__navigation');
 
-// Hide/Show services information
-// let servicesTitle = document.querySelector('.services-title');
-
-// servicesTitle.onclick = function () {
-//   for (let i = 0; i < servicesTitle.length; i++) {
-//     alert('df')
-//   }
-// }
+menuButton.addEventListener('click', function () {
+  menuButton.classList.toggle('menu-button-active');
+  menu.classList.toggle('header-navbar__navigation__active');
+});
