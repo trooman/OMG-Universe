@@ -1039,6 +1039,20 @@ li {
     width: 300px;
   }
 
+  /* .contacts-text__title {
+    font-size: 15px;
+  } */
+
+  .contacts-text {
+    width: 300px;
+  }
+
+  .contacts-text__subtitle {
+    font-size: 12px;
+    /* width: 300px; */
+    text-align: center;
+  }
+
   .modal-dialog {
     max-width: 300px;
     padding: 35px;
