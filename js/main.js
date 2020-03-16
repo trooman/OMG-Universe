@@ -20,3 +20,28 @@ menuButton.addEventListener('click', function () {
   menuButton.classList.toggle('menu-button-active');
   menu.classList.toggle('header-navbar__navigation__active');
 });
+
+// Закрытие бургера при нажатии на элементы navbar
+let aboutUs = document.querySelector('#aboutUs');
+aboutUs.onclick = function () {
+  menu.classList.remove('header-navbar__navigation__active');
+  menuButton.classList.remove('menu-button-active');
+}
+
+let servicesInNavbar = document.querySelector('#servicesInNavbar');
+servicesInNavbar.onclick = function () {
+  menu.classList.remove('header-navbar__navigation__active');
+  menuButton.classList.remove('menu-button-active');
+}
+
+let contactsInNavbar = document.querySelector('#contactsInNavbar');
+contactsInNavbar.onclick = function () {
+  menu.classList.remove('header-navbar__navigation__active');
+  menuButton.classList.remove('menu-button-active');
+}
+
+let findUs = document.querySelector('#findUs');
+findUs.onclick = function () {
+  menu.classList.remove('header-navbar__navigation__active');
+  menuButton.classList.remove('menu-button-active');
+}
