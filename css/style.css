@@ -489,25 +489,37 @@ li {
 }
 
 .services {
+  display: flex;
+  flex-direction: column;
   background-color: #f3f3f3;
   padding-top: 30px;
   padding-bottom: 100px;
 }
 
-.services-block {
-  /* padding: 20px; */
-  /* margin-bottom: 80px; */
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+.services-info {
+  display: flex;
+  justify-content: space-between;
 }
 
-.services-block:hover {
-  box-shadow: none;
+.services-info__block {
+  padding: 10px 20px;
+  max-width: 340px;
+  border-radius: 20px;
+  background-color: #fff;
+  text-align: justify;
 }
 
-/* .services-block:hover {
-  box-shadow: 1px 1px 100px #f3f3f3,
-    -1px -1px 100px #f3f3f3;
-} */
+.services-about__block__first {
+  margin-top: 40px;
+}
+
+.services-about__block__second {
+  margin-top: 65px;
+}
+
+.services-info__block:hover {
+  background-color: #f3f3f3;
+}
 
 .services-text__title {
   text-align: center;
@@ -517,177 +529,63 @@ li {
   letter-spacing: 4px;
 }
 
-.services-pack {
+.services-icon {
+  width: 50px;
+  margin-right: 30px;
+}
+
+.services-about {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
-.services-title {
-  padding: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: white;
-  background-color: #adccea;
-  letter-spacing: 4px;
+.services-titletext {
+  display: flex;
 }
 
-.services-subtitle {
-  padding: 10px;
-  margin-bottom: 0;
-  margin-top: 0;
+.services-about__percent {
+  padding: 40px 30px;
+  border: 3px solid #85b2e4;
+  border-radius: 50%;
+}
+
+.services-about__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   color: #81868e;
   letter-spacing: 0.7px;
-  background-color: white;
-  /* background-color: #fff; */
+  
 }
 
-.services-information__job__brows__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20px;
+.services-info__title {
+  color: #333b46;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-.services-information__job__brows__text__mainText {
-  font-size: 20px;
-}
-
-.services-information__job__brows__text__secondaryText {
+.services-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
   color: #81868e;
+  letter-spacing: 0.7px;
 }
 
-.services-information__job__eyelashes {
-  margin-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 
-.services-information__job__eyelashes__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20px;
-}
 
-.services-information__job__eyelashes__text__mainText {
-  font-size: 20px;
-}
 
-.services-information__job__eyelashes__text__secondaryText {
-  color: #81868e;
-}
 
-.services-information__job__lips {
-  margin-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 
-.services-information__job__lips__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20px;
-}
 
-.services-information__job__lips__text__mainText {
-  font-size: 20px;
-}
 
-.services-information__job__lips__text__secondaryText {
-  color: #81868e;
-}
 
-.services-information__job__eyelid {
-  margin-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 
-.services-information__job__eyelid__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20px;
-}
 
-.services-information__job__eyelid__text__mainText {
-  font-size: 20px;
-}
-
-.services-information__job__eyelid__text__secondaryText {
-  color: #81868e;
-}
-
-.services-information__warranty {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.services-information__warranty__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 60px;
-}
-
-.services-information__warranty__wrap__percents {
-  margin-bottom: 26px;
-  font-size: 28px;
-  border: 3px solid #adccea;
-  border-radius: 50%;
-  padding: 30px 15px;
-  color: #81868e;
-}
-
-.services-information__warranty__wrap__text {
-  color: #81868e;
-  font-size: 16px;
-}
 
 */ .priceList {
   background-color: #f3f3f3;
@@ -994,9 +892,31 @@ li {
   .about {
     justify-content: space-around;
   }
+
+  .services-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services-info__block {
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+
+  .services-info__title {
+    font-size: 20px;
+  }
+
+  .services-description__text {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 940px) {
+  .about-information__subtitle {
+    font-size: 13px;
+  }
+
   .contacts-common {
     flex-wrap: wrap;
   }
@@ -1004,6 +924,7 @@ li {
   .contacts-common__block {
     margin-bottom: 30px;
   }
+  
 }
 
 .menu-button {
@@ -1089,5 +1010,41 @@ li {
   .header-navbar__navigation__list li {
     margin-left: 0;
     margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  #logo {
+    width: 100px;
+  }
+
+  .main {
+    margin-top: 50px;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .main-subtitle {
+    font-size: 18px;
+  }
+
+  .about-information__photo {
+    display: none;
+  }
+
+  .about-information__subtitle {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  .modal-dialog {
+    max-width: 300px;
+    padding: 35px;
+  }
+
+  .modal-title {
+    font-size: 9px;
   }
 }
