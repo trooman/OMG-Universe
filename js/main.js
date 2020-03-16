@@ -5,6 +5,7 @@ let closeButton = document.querySelector('#closeButton');
 button.addEventListener('click', function () {
   modal.classList.add('modal-active');
   menu.classList.remove('header-navbar__navigation__active');
+  menuButton.classList.remove('menu-button-active');
 });
 
 closeButton.addEventListener('click', function () {
