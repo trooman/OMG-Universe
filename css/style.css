@@ -1039,6 +1039,10 @@ li {
     width: 300px;
   }
 
+  .services-info__block {
+    max-width: 300px;
+  }
+
   /* .contacts-text__title {
     font-size: 15px;
   } */
