@@ -7,11 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>OMG Universe</title>
   <link rel="stylesheet" href="css/style.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="css/fonts.css" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Play|Roboto+Slab&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Play&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css" />
   <link rel="stylesheet" href="css/slick-theme.css" />
 </head>
@@ -27,7 +25,7 @@
         <div class="header-navbar__navigation">
           <ul class="header-navbar__navigation__list">
             <li>
-              <a id="aboutUs" href="#about-us">О нас</a>
+              <a id="aboutUs" href="#about-us">Главная</a>
             </li>
             <li>
               <a id="servicesInNavbar" href="#services">Услуги</a>
@@ -65,7 +63,7 @@
   <section id="about-us" class="about">
     <div class="about container">
       <div class="about-information">
-        <h3 class="about-information__title">О Нас</h3>
+        <h3 class="about-information__title">Главная</h3>
         <p class="about-information__subtitle">
           Перманентный макияж – это, в первую очередь, искусство. Искусство
           быть красивой! Красота в наше время – это естественность и
@@ -109,14 +107,24 @@
             <div class="services-description">
               <p class="services-description__text">
                 Нет бровей – нет характера!
-                Правильно подобранная форма бровей способна координально изменить вашу внешность, сделать ваш взгляд
+                Правильно подобранная форма бровей способна кардинально изменить вашу внешность, сделать ваш взгляд
                 выразительнее,
                 привлекательнее и добрее, а так же скорректировать особенности лица, как природные, так и возрастные.
               </p>
-              <div class="services-about__block services-about__block__first">
-                <p class="services-about__percent">100%</p>
-                <p class="services-about__accept">Качество</p>
-              </div>
+              <hr>
+              <ul class="services-description">
+                <li class="services-list">1.Теневая растушевка.</li>
+                <div class="services-subgroup">
+                  <p class="services-list-description">
+                    Эффект подкрашенных бровей. С помощью этой техники можно достичь абсолютно разных результатов, будь
+                    то
+                    четкие границы с
+                    ярко выраженной формой или же нежный пушистый край с мягким градиентом.
+                    <a href="#" class="services-img-link">Пример</a>
+                  </p>
+                </div>
+                <li class="services-list">2.Волосковая техника.</li>
+              </ul>
             </div>
           </div>
           <div class="services-info__block">
@@ -130,10 +138,7 @@
                 Пушистая, воздушная и утонченная линия сделает ваш взгляд нежным, спокойным и романтичным…и ваша душа
                 будет сиять.
               </p>
-              <div class="services-about__block services-about__block__second">
-                <p class="services-about__percent">100%</p>
-                <p class="services-about__accept">Гарантия</p>
-              </div>
+              <hr>
             </div>
           </div>
           <div class="services-info__block">
@@ -148,11 +153,8 @@
                 правильно расставленные акценты, всё этот может создать как образ юной милой девушки, так и образ
                 взрослой, уверенной в
                 себе женщины.
-                <div class="services-about__block services-about__block__third">
-                  <p class="services-about__percent">100%</p>
-                  <p class="services-about__accept">Надежность</p>
-                </div>
               </p>
+              <hr>
             </div>
           </div>
         </div>
@@ -213,7 +215,7 @@
   </section>
   <!-- contacts -->
 
-<!--   <section id="map" class="map">
+  <!-- <section id="map" class="map">
     <div class="container map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.045818413444!2d24.767086941299308!3d59.4375962598176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935c20b08feb%3A0x5ccbc608d7cf07d2!2sNarva%20maantee%2022%2C%2010124%20Tallinn!5e0!3m2!1sen!2see!4v1571756357201!5m2!1sen!2see"
@@ -230,8 +232,8 @@
           <h3 class="modal-dialog__title">Свяжитесь с нами</h3>
         </div>
         <form action="/php/send.php" method="POST" class="modal-form">
-          <input class="modal-input" name="name" type="text" placeholder="Ваше имя" required/>
-          <input class="modal-input" name="email" type="email" placeholder="E-mail" required/>
+          <input class="modal-input" name="name" type="text" placeholder="Ваше имя" required />
+          <input class="modal-input" name="email" type="email" placeholder="E-mail" required />
           <input class="modal-input" name="number" type="number" placeholder="Телефон" required>
           <input class="modal-button" type="submit">
         </form>
@@ -240,7 +242,7 @@
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
-  
+
 
   <script src="js/main.js"></script>
 

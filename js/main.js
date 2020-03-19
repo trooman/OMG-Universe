@@ -52,3 +52,18 @@ findUs.onclick = function () {
   menu.classList.remove('header-navbar__navigation__active');
   menuButton.classList.remove('menu-button-active');
 }
+
+
+// show-hide picture
+
+// let imgLink = document.querySelector('.services-img-link');
+// let imgs = document.querySelector('.services-img');
+
+// function showHide() {
+//   if (imgs.style.display = 'none') {
+//     imgs.style.display = 'block';
+//   } else {
+//     imgs.style.display = 'none';
+//   }
+// }
+// imgLink.onclick = showHide();
