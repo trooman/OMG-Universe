@@ -530,8 +530,8 @@ li {
   letter-spacing: 4px;
 }
 
-/* .services-icon {
-  width: 50px;
+ .services-icon {
+  max-width: 50px;
   margin-right: 30px;
 }
 
@@ -543,7 +543,7 @@ li {
 .services-titletext {
   display: flex;
 }
-
+/*
 .services-about__percent {
   padding: 40px 30px;
   border: 3px solid #6c8fb8;
@@ -1577,7 +1577,12 @@ li {
     text-align: center;
   }
 
+  .services-icon {
+    max-width: 30px;
+    margin-right: 10px;
+  }
 }
+
 
 @media (max-width: 375px) {
   .popup-image {
