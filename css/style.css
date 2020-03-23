@@ -494,7 +494,9 @@ li {
 .services {
   display: flex;
   flex-direction: column;
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
+  /* background-color: #85b2e4; */
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
   padding-top: 30px;
   padding-bottom: 100px;
 }
