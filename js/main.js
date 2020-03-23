@@ -139,7 +139,7 @@ let openButton6 = document.querySelector('.services-img-link6'),
   close6 = document.querySelector('.close6');
 
 openButton6.onclick = function () {
-  popup4.style.display = 'block';
+  popup6.style.display = 'block';
 }
 
 close6.onclick = function () {
