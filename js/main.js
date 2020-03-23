@@ -54,13 +54,6 @@ findUs.onclick = function () {
 }
 
 
-// Open/Close OMG Image
-// let imgLink = document.querySelectorAll('.services-img-link');
-// for (let i = 0; i < imgLink.length; i++) {
-//   imgLink[i].onclick = function () {
-
-//   }
-// }
 
 let openButton = document.querySelector('.services-img-link'),
   popup = document.querySelector('.popup'),
@@ -151,4 +144,23 @@ openButton6.onclick = function () {
 
 close6.onclick = function () {
   popup6.style.display = 'none';
+}
+
+
+// Tabulation
+// let accordeonArrow = document.querySelectorAll('.services-accordeon-button');
+let servicesInfoBlock = document.querySelector('.services-info__block');
+let servicesDescription = document.querySelectorAll('.services-description');
+let servicesDescriptionList = document.querySelectorAll('.services-description__list');
+
+// accordeonArrow.onclick = function() {
+//   accordeonArrow.innerHTML = '⇧';
+// }
+
+for (let i = 0; i <= servicesDescriptionList.length; i++) {
+  servicesDescriptionList[i].onclick = function() {
+    this.classList.toggle('active');
+
+    this.nextElementSibling.classList.toggle('show')
+  }
 }

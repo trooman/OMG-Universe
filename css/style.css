@@ -499,11 +499,6 @@ li {
   padding-bottom: 100px;
 }
 
-.services-info {
-  /* display: flex;
-  justify-content: space-between; */
-}
-
 .services-info__block {
   margin-bottom: 10px;
   padding: 10px 20px;
@@ -511,18 +506,20 @@ li {
   border-radius: 20px;
   background-color: #fff;
   text-align: justify;
+  border: 1px solid #85b2e4;
+  position: relative;
 }
 
-/* .services-about__block__first {
-  margin-top: 40px;
-}
-
-.services-about__block__second {
-  margin-top: 65px;
+/* .services-info__block:hover {
+  background-color: #f3f3f3;
 } */
 
-.services-info__block:hover {
-  background-color: #f3f3f3;
+.services-accordeon-button {
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .services-text__title {
@@ -563,21 +560,50 @@ li {
   line-height: 25px;
   color: #81868e;
   letter-spacing: 0.7px;
-
 }
 
 .services-info__title {
   color: #333b46;
   text-transform: uppercase;
   letter-spacing: 4px;
+  cursor: pointer;
 }
 
+/* .services-info__block2 {
+  display: none;
+}
+
+.services-info__block3 {
+  display: none;
+} */
+
 .services-description {
+  /* display: none; */
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   color: #81868e;
   letter-spacing: 0.7px;
+}
+
+.services-description__list {
+  /* display: none; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #81868e;
+  letter-spacing: 0.7px;
+  transition: 0.4s;
+}
+.services-description__list.active {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #81868e;
+  letter-spacing: 0.7px;
+}
+.services-description__list.show {
+  display: block;
 }
 
 .services-subgroup {
@@ -651,10 +677,55 @@ li {
   cursor: pointer;
 }
 
+/* SWITCH ARROW */
+.services-arrow {
+  font-size: 50px;
+  cursor: pointer;
+  display: inline;
+}
 
+/* SWITCH BUTTONS */
+/* .services-switch__button {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+.services-switch__button:hover {
+  background-color: #85b2e4;
+  color: white;
+  transition: 0.3s;
+}
 
+.services-switch__button2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+.services-switch__button2:hover {
+  background-color: #85b2e4;
+  color: white;
+  transition: 0.3s;
+}
 
-
+.services-switch__button3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+.services-switch__button3:hover {
+  background-color: #85b2e4;
+  color: white;
+  transition: 0.3s;
+} */
 
 
 
